@@ -19,7 +19,7 @@ class DNS:
 
     def getMyIp(self):
         try:
-            u = urllib2.urlopen('http://members.3322.org/dyndns/getip')
+            u = urllib2.urlopen('whatismyip.akamai.com')
             return u.read().strip('\n')
         except urllib2.HTTPError as e:
             print('getMyIp:',e)
